@@ -29,8 +29,8 @@ std::random_device r;
 
 int main(){
     
-    int first = 0;
-    int last = 20;
+    int first = 1;
+    int last = 6;
 
     //uniformly distributed histagram
     std::map<int, int> histU;
@@ -40,7 +40,7 @@ int main(){
     std::cout << "Uniformly distributed from " << first << " to " << last << ":\n";
     std::cout << std::endl;
     PrintDistribution(histU);
-
+    std::cout << std::endl;
    
     //normally distributed histagram
     std::map<int, int> histN;
@@ -49,7 +49,7 @@ int main(){
     }
     std::cout << "Normal distribution around " << (last - first) / 2  << ":\n";
     PrintDistribution(histN);
-
+    std::cout << std::endl;
 
 
     //histagram from rand() function

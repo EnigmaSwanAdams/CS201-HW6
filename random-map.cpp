@@ -8,6 +8,8 @@
 *
 */
 
+#include "random-map.h"
+
 void randomMap() {
 
 }

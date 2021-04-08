@@ -8,5 +8,10 @@
 *
 */
 
+#ifndef RANDOM_MAP_H
 
+#define RANDOM_MAP_H
 void randomMap();
+
+
+#endif  //RANDOM_MAP_H

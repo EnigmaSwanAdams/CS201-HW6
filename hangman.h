@@ -7,6 +7,15 @@
 * Additional program 1 (hangman.cpp) header
 *
 */
+#include<iostream>
+
+#ifndef HANGMAN_H
+
+#define HANGMAN_H
+void hangman(std::string word); 
+
+#endif  //HANGMAN_H
 
 
-void hangman();
+
+

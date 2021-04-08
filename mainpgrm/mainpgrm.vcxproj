@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b1a8f244-8007-4476-8f44-144e64475968}</ProjectGuid>
-    <RootNamespace>CS201HW6</RootNamespace>
+    <ProjectGuid>{bb378162-8824-4bc7-86a3-01fd6bd31deb}</ProjectGuid>
+    <RootNamespace>mainpgrm</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Addit01</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,10 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="hangman.cpp" />
+    <ClCompile Include="..\random-map.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="hangman.h" />
+    <ClInclude Include="..\random-map.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -22,7 +22,10 @@ using std::map;
 using std::begin; using std::end;
 using std::find;
 
-
+int main() {
+	hangman("what");
+	return 0;
+}
 /*requirments: play hangman, and 
 //Assign words they will be guessing at
 //ten chances to guess the right word
@@ -74,12 +77,13 @@ void hangman(string word) {
 					10-numWrongGuesses << " wrong guesses left." << endl;
 
 			}
-			else if (guessed.count(guess) > 0) {
+			else if (guessed.count(guess) > 0) { // lets the user know if they entered that letter befor
 				cout << "You've guessed that befor. No penalty, but try again." << endl;
 
 			}
 			else {
 				cout << "You guessed right. There are " << numLetters << " " << guess << "(s)" << endl;
+				//only increment right guesses if they guessed a new letter 
 				rightGuesses = rightGuesses + numLetters;
 
 				guessed[guess] = numGuesses;

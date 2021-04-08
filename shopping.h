@@ -11,6 +11,7 @@
 
 #define SHOPPING_H
 void shopping();
+void removeItem(Record item)
 
 #endif  //SHOPPING_H
 

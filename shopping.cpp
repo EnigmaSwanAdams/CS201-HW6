@@ -3,6 +3,8 @@
 * CS201-HW6
 * 4/7/21
 *
+* file name: shopping.cpp
+* 
 * Additional program 2 as described in the homework assignment on blackbuard
 * 
 *

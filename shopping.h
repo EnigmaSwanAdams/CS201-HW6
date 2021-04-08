@@ -10,8 +10,7 @@
 #ifndef SHOPPING_H
 
 #define SHOPPING_H
-void shopping();
-void removeItem(Record item)
+//void shopping();
 
 #endif  //SHOPPING_H
 

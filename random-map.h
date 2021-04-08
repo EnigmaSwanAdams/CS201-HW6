@@ -13,7 +13,7 @@
 
 #define RANDOM_MAP_H
 //returns uniform random number between first and last inclusive
-int RnadomBetweenU(int first, int last);
+int RandomBetweenU(int first, int last);
 
 //return normally distributed random number between first and last inclusive
 int RandomBetweenN(int first, int last);
@@ -24,10 +24,6 @@ int RandomBetween(int first, int last);
 //prints the distribution the same way the sample code did
 //showing the distribution
 void PrintDistribution(const std::map<int, int> & numbers);
-
-//defualt example code I slapped into a function for organization
-//it prints a histogram of normally distributed number centered around 4
-void DefualtExample();
 
 #endif  //RANDOM_MAP_H
 

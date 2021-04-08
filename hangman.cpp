@@ -24,7 +24,7 @@ using std::begin; using std::end;
 using std::find;
 
 int main() {
-	hangman("what");
+	hangman("Hello");
 	return 0;
 }
 /*requirments: play hangman, and 
@@ -73,7 +73,7 @@ void hangman(string word) {
 
 			
 			if (guessed.count(guess) > 0) { // lets the user know if they entered that letter befor
-				cout << "You've guessed that befor. No penalty, but try again." << endl;
+				cout << "You've guessed that before. No penalty, but try again." << endl;
 
 			}
 			else {
@@ -97,7 +97,7 @@ void hangman(string word) {
 			if (rightGuesses >= word.size()) {
 				cout << "You guessed all the letters! \n"
 					"The word was " << word << endl;
-				break;
+				return;
 			}
 
 	}

@@ -77,7 +77,18 @@ int main() {
 
 	while (true) {
 		string desire;
-		double cost = 0.0; // DUMMY VALUE
+		double cost = 0.0; 
+		//cost = accumulate(cart.end(), cart.begin(), 0.0, [](double acc, pair<string, Record> c) {return (acc + c.second.unitPrice*c.second.unit); });
+		//couldn't figure out how to ge the above line to work, so I very cheetingly will be placing all
+		//the prices in a vector and then using accumulate on it
+		vector<double> pricesPerItem;
+		for (const auto p : cart) {
+			if (p.second.units > 0) {
+				pricesPerItem.push_back(p.second.unitPrice * p.second.units);
+			}
+		}
+
+		cost = accumulate(pricesPerItem.begin(), pricesPerItem.end(), 0.00);
 
 		cout << "Would you like to add or remove something from your cart? Or are you done shopping \n"
 			"Type \"add\", \"remove\" , or \"done\" ";
@@ -104,18 +115,6 @@ int main() {
 				}
 
 				//let them know a total price
-				//cost = accumulate(cart.end(), cart.begin(), 0.0, [](double acc, pair<string, Record> c) {return (acc + c.second.unitPrice*c.second.unit); });
-				//couldn't figure out how to ge the above line to work, so I very cheetingly will be placing all
-				//the prices in a vector and then using accumulate on it
-				vector<double> pricesPerItem;
-				for (const auto p : cart){
-					if (p.second.units > 0) {
-						pricesPerItem.push_back(p.second.unitPrice * p.second.units);
-						cout <<"TESTING " << p.second.unitPrice << ", " << p.second.units;
-					}
-				}
-
-				cost = accumulate(pricesPerItem.begin(), pricesPerItem.end(), 0.00);
 				cout << "Your total is " << cost << endl;
 
 					double payment;
